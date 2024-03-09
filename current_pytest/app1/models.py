@@ -24,7 +24,7 @@ class Transaction(models.Model):
     email               = models.EmailField(max_length=50, null=False, blank=False)
     creation_date       = models.DateTimeField(auto_now_add=True, null=False, blank=False)
     currency            = models.ForeignKey(Currency, null=False, blank=False, default=1, on_delete=models.PROTECT)
-    payment_status      = models.Choices(fields=('PENDING', 'PAID', 'FAILED'), null=False, blank=False, default='PENDING')
+    payment_status      = models.Choices('PENDING', 'PAID', 'FAILED')
     payment_intent_id   = models.CharField(max_length=100, null=True, blank=False, default=None)
     message             = models.TextField(null=True, blank=True)
 
