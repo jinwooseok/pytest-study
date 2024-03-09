@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+env = "*"
+django = "*"
+pytest-django = "*"
+djangorestframework = "*"
+pytest-cov = "*"
+django-hashid-field = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
