@@ -64,4 +64,4 @@ class TestCurrencyEndpoints:
         )
 
         assert response.status_code == 200
-        assert Currency.objects.get(id=old_currency.id) == new_currency.name
+        assert Currency.objects.get(id=old_currency.id).name == new_currency.name
