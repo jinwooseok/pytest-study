@@ -10,6 +10,7 @@ pytest-django = "*"
 djangorestframework = "*"
 pytest-cov = "*"
 django-hashid-field = "*"
+model-bakery = "*"
 
 [dev-packages]
 
