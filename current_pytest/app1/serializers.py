@@ -44,7 +44,7 @@ class UnfilledTransactionSerializer(serializers.ModelSerializer):
         )
 
 class FilledTransactionSerializer(serializers.ModelSerializer):
-    id = HashidSerializerCharField(source_field='transaction.Transaction.id', read_only=True)
+    id = HashidSerializerCharField(source_field='app1.Transaction.id', read_only=True)
     currency = serializers.StringRelatedField(read_only=True)
     link = serializers.ReadOnlyField()
 
